@@ -15,6 +15,9 @@
 # Platform path
 PLATFORM_COMMON_PATH := device/sony/tone
 
+# Platform without a vendor partition
+TARGET_COPY_OUT_VENDOR := system/vendor
+
 $(call inherit-product, device/sony/common/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
